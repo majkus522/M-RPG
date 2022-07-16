@@ -22,7 +22,7 @@ public class MobKilled  implements Listener
         event.setDroppedExp(0);
         LivingEntity entity = event.getEntity();
         player = event.getEntity().getKiller();
-        if(entity.getCustomName().equalsIgnoreCase("§2Dzika owca"))
+        if(entity.getCustomName() == "§2Dzika owca")
         {
             ItemStack drop = ItemManager.wool;
             double random = Math.random() * 100;
@@ -46,7 +46,7 @@ public class MobKilled  implements Listener
                 entity.getLocation().getWorld().dropItem(entity.getLocation(), drop);
             exp(3, 8);
         }
-        else if(entity.getCustomName().equalsIgnoreCase("§2Dzika krowa"))
+        else if(entity.getCustomName() == "§2Dzika krowa")
         {
             ItemStack drop = ItemManager.leatherCow;
             double random = Math.random() * 100;
@@ -72,7 +72,7 @@ public class MobKilled  implements Listener
                 entity.getLocation().getWorld().dropItem(entity.getLocation(), drop);
             exp(4, 8);
         }
-        else if(entity.getCustomName().equalsIgnoreCase("§4Wilk"))
+        else if(entity.getCustomName() == "§4Wilk")
         {
             ItemStack drop = ItemManager.leatherWolf;
             double random = Math.random() * 100;
