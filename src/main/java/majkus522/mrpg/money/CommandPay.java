@@ -17,6 +17,11 @@ public class CommandPay implements CommandExecutor
         if(sender instanceof ConsoleCommandSender)
         {
             Player reciver = Bukkit.getPlayer(args[0]);
+            if(reciver == null)
+            {
+                System.out.println("Gracza nie ma na serwerze");
+                return true;
+            }
             int value = Integer.parseInt(args[1]);
             MoneyController.addMoney(reciver, value);
             return true;
@@ -28,6 +33,11 @@ public class CommandPay implements CommandExecutor
         }
         Player player = (Player) sender;
         Player reciver = Bukkit.getPlayer(args[0]);
+        if(reciver == null)
+        {
+            player.sendMessage(Functions.getCommandExecutor("pay") + ChatColor.RED + "Gracza nie ma na serwerze");
+            return true;
+        }
         int value = Integer.parseInt(args[1]);
         if(MoneyController.haveMoney(player, value))
         {
