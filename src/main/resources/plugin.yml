@@ -1,0 +1,5 @@
+name: M-RPG
+version: '${project.version}'
+main: majkus522.mrpg.Main
+api-version: 1.19
+authors: [ majkus522 ]
