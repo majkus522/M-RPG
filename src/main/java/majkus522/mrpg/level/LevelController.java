@@ -3,7 +3,6 @@ package majkus522.mrpg.level;
 import majkus522.mrpg.Functions;
 import majkus522.mrpg.Main;
 import majkus522.mrpg.ScoreboardController;
-import majkus522.mrpg.comunication.Add;
 import majkus522.mrpg.events.custom.PlayerLevelUpEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -25,8 +24,7 @@ public class LevelController
 
     public static int getLevel(Player player)
     {
-        String value = Main.config.getString("Level." + player.getUniqueId());
-        return Integer.parseInt(value);
+        return Integer.parseInt(Main.config.getString("Level." + player.getUniqueId()));
     }
 
     public static void addLevel(Player player, int input)

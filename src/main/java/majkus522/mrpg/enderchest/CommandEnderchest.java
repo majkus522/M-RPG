@@ -19,12 +19,12 @@ public class CommandEnderchest implements CommandExecutor
             return true;
         }
         Player player = (Player) sender;
-        EnderchestInventory inventory = new EnderchestInventory(EnderchestController.enderchests.get(player.getUniqueId().toString()));
+        EnderchestGui inventory = new EnderchestGui(EnderchestController.enderchests.get(player.getUniqueId().toString()));
         if(args.length >= 1 && args[0].equalsIgnoreCase("upgrade") && inventory.getInventory().getSize() == 27)
         {
             if(MoneyController.haveMoney(player, 2000))
             {
-                inventory = new EnderchestInventory(inventory);
+                inventory = new EnderchestGui(inventory);
                 MoneyController.addMoney(player, -2000);
                 player.sendMessage(Functions.getCommandExecutor("enderchest") + Functions.colors(ChatColor.GREEN) + "Twój enderchest został ulepszony");
             }

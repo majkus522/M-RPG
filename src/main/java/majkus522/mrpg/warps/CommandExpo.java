@@ -16,7 +16,7 @@ public class CommandExpo implements CommandExecutor
             return true;
         }
         Player player = (Player) sender;
-        ExpoInventory inventory = new ExpoInventory(player);
+        ExpoGui inventory = new ExpoGui(player);
         player.openInventory(inventory.getInventory());
         return true;
     }

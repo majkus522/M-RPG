@@ -11,11 +11,11 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class ExpoInventory implements InventoryHolder
+public class ExpoGui implements InventoryHolder
 {
     Inventory inventory;
 
-    public ExpoInventory(Player player)
+    public ExpoGui(Player player)
     {
         inventory = Bukkit.createInventory(this, 27, "Expowiska");
 

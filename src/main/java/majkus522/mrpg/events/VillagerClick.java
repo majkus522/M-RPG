@@ -1,7 +1,7 @@
 package majkus522.mrpg.events;
 
 import majkus522.mrpg.abilities.AbilityTree;
-import majkus522.mrpg.blacksmith.BlacksmithGUI;
+import majkus522.mrpg.blacksmith.BlacksmithGui;
 import majkus522.mrpg.blacksmith.BlacksmithJob;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Entity;
@@ -27,7 +27,7 @@ public class VillagerClick implements Listener
             else if(entity.getCustomName().equalsIgnoreCase(ChatColor.GOLD + "Kowal"))
             {
                 Player player = event.getPlayer();
-                player.openInventory(new BlacksmithGUI(BlacksmithJob.main).getInventory());
+                player.openInventory(new BlacksmithGui(BlacksmithJob.main).getInventory());
             }
         }
     }

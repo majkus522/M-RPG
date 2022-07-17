@@ -15,7 +15,7 @@ public class ExpoRightClick implements Listener
     {
         if(event.getClickedInventory() == null)
             return;
-        if(event.getClickedInventory().getHolder() instanceof ExpoInventory)
+        if(event.getClickedInventory().getHolder() instanceof ExpoGui)
         {
             event.setCancelled(true);
             Player player = (Player)event.getWhoClicked();

@@ -19,7 +19,7 @@ public class BlacksmithController implements Listener
         if(event.getClickedInventory() == null)
             return;
         Player player = (Player)event.getWhoClicked();
-        if(event.getClickedInventory().getHolder() instanceof BlacksmithGUI)
+        if(event.getClickedInventory().getHolder() instanceof BlacksmithGui)
         {
             if(event.getView().getTitle() == "Kowal")
             {
@@ -49,7 +49,7 @@ public class BlacksmithController implements Listener
                 if(event.getCurrentItem().getType() != Material.GRAY_STAINED_GLASS_PANE)
                 {
                     player.closeInventory();
-                    player.openInventory(new BlacksmithGUI(type).getInventory());
+                    player.openInventory(new BlacksmithGui(type).getInventory());
                 }
                 event.setCancelled(true);
             }
@@ -66,7 +66,7 @@ public class BlacksmithController implements Listener
     @EventHandler
     public void finish(InventoryCloseEvent event)
     {
-        if(event.getInventory().getHolder() instanceof BlacksmithGUI)
+        if(event.getInventory().getHolder() instanceof BlacksmithGui)
         {
             Player player = (Player)event.getPlayer();
             boolean valid = true;

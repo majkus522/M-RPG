@@ -32,7 +32,7 @@ public class EnderchestController implements Listener
         if (event.getBlock().getType() == Material.ENDER_CHEST)
         {
             Player player = event.getPlayer();
-            player.openInventory(new EnderchestInventory(enderchests.get(player.getUniqueId().toString())).getInventory());
+            player.openInventory(new EnderchestGui(enderchests.get(player.getUniqueId().toString())).getInventory());
         }
     }
 

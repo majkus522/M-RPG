@@ -9,11 +9,11 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class BlacksmithGUI implements InventoryHolder
+public class BlacksmithGui implements InventoryHolder
 {
     Inventory inventory;
 
-    public BlacksmithGUI(BlacksmithJob type)
+    public BlacksmithGui(BlacksmithJob type)
     {
         inventory = Bukkit.createInventory(this, type == BlacksmithJob.main ? 27 : 54, getName(type));
         ItemStack empty = Functions.emptySlot();
