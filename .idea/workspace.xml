@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="948654c5-e2b2-41f4-bb52-569835f293b7" name="Changes" comment="Update 13:04 16.07.2022">
+      <change afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/CommandLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/money/CommandPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/money/CommandPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/ScoreboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/ScoreboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/comunication/AddsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/comunication/AddsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/MobKilled.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/MobKilled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/LevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/LevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/playerClass/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/playerClass/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mrpg-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mrpg-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23908046" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />

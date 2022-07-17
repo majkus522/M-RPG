@@ -3,6 +3,8 @@ package majkus522.mrpg;
 import majkus522.mrpg.level.LevelController;
 import majkus522.mrpg.magic.ManaController;
 import majkus522.mrpg.money.MoneyController;
+import majkus522.mrpg.playerClass.ClassController;
+import majkus522.mrpg.playerClass.PlayerClass;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -22,12 +24,15 @@ public class ScoreboardController
         scoreNick.setScore(4);
         Score scoreLevel = obj.getScore(ChatColor.GREEN + "Poziom: " + LevelController.getLevel(player));
         scoreLevel.setScore(3);
-        Score scoreExp = obj.getScore(ChatColor.GREEN + "Exp: " + LevelController.getExp(player));
+        Score scoreExp = obj.getScore(ChatColor.GREEN + "Exp: " + LevelController.getExp(player) + "/" + LevelController.getRequiedExp(player));
         scoreExp.setScore(2);
         Score scoreMoney = obj.getScore(ChatColor.GREEN + "Pieniądze: " + MoneyController.getMoney(player));
         scoreMoney.setScore(1);
-        Score scoreMana = obj.getScore(ChatColor.LIGHT_PURPLE + "Mana: " + ManaController.getPlayerMana(player) + "/" + ManaController.getPlayerMaxMana(player));
-        scoreMana.setScore(1);
+        if(ClassController.getClass(player) != PlayerClass.Wojownik)
+        {
+            Score scoreMana = obj.getScore(ChatColor.LIGHT_PURPLE + "Mana: " + ManaController.getPlayerMana(player) + "/" + ManaController.getPlayerMaxMana(player));
+            scoreMana.setScore(1);
+        }
         Score scoreLineBottom = obj.getScore(ChatColor.BLUE + "=-=-=-=-=-=-=-=-=-= ");
         scoreLineBottom.setScore(0);
         player.setScoreboard(scoreboard);

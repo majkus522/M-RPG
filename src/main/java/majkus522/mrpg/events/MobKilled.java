@@ -21,8 +21,10 @@ public class MobKilled  implements Listener
         event.getDrops().clear();
         event.setDroppedExp(0);
         LivingEntity entity = event.getEntity();
+        if (!(entity instanceof Player))
+            return;
         player = event.getEntity().getKiller();
-        if(entity.getCustomName() == "§2Dzika owca")
+        if(entity.getName() == "§2Dzika owca")
         {
             ItemStack drop = ItemManager.wool;
             double random = Math.random() * 100;

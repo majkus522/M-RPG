@@ -3,3 +3,72 @@ version: '${project.version}'
 main: majkus522.mrpg.Main
 api-version: 1.19
 authors: [ majkus522 ]
+
+commands:
+  item:
+    description: Give specified item
+    usage: /<command> [item]
+    permission: rpg.op
+
+  mob:
+    description: Spawn mob
+    usage: /<command> [mob]
+    permission: rpg.op
+
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+
+  warp:
+    description: Teleport to specified place
+    usage: /<command> [warp]
+
+  warps:
+    description: List of warps
+    usage: /<command>
+
+  rank:
+    description: Change player rank
+    usage: /<command> [player] [rank]
+    permission: rpg.op
+
+  class:
+    description: Change player rank
+    usage: /<command> [player] [class]
+    permission: rpg.op
+
+  msg:
+    description: Send message to player
+    usage: /<command> [player] [message]
+
+  expo:
+    description: Select EXPO
+    usage: /<command>
+    permission: rpg.vip
+
+  enderchest:
+    description: Enderchest
+    usage: /<command>
+
+  pay:
+    description: Pay money to player
+    usage: /<command> [player] [money]
+
+  klan:
+    description: Command allow to manipulate your clan
+    usage: /<command>
+
+  mreload:
+    description: Reload data
+    usage: /<command> [data]
+    permission: rpg.op
+
+  scan:
+    description: Scan player inventory
+    usage: /<command> [option] [player]
+    permission: rpg.op
+
+  level:
+    description: Edit player level and EXP
+    usage: /<command> [player] [level/exp] [add/set] [amount]
+    permission: rpg.op

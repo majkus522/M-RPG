@@ -14,6 +14,7 @@ import majkus522.mrpg.enderchest.EnderchestController;
 import majkus522.mrpg.events.*;
 import majkus522.mrpg.items.CommandItem;
 import majkus522.mrpg.items.ItemManager;
+import majkus522.mrpg.level.CommandLevel;
 import majkus522.mrpg.level.PlayerLevelUp;
 import majkus522.mrpg.mobs.CommandMob;
 import majkus522.mrpg.money.CommandPay;
@@ -79,6 +80,7 @@ public final class Main extends JavaPlugin
         this.getCommand("klan").setExecutor(new CommandClan());
         this.getCommand("mreload").setExecutor(new mReloadCommand());
         this.getCommand("scan").setExecutor(new ScanCommand());
+        this.getCommand("level").setExecutor(new CommandLevel());
 
         EnderchestController.loadEnderchests();
         AddsController.load();

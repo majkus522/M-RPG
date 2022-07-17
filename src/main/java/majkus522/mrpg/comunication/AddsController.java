@@ -18,11 +18,11 @@ public class AddsController
     public static void load()
     {
         addIndex = 0;
-        for(int index = 0; index < new File("data/").list().length; index++)
+        for(int index = 0; index < new File("data/adds/").list().length; index++)
         {
             try
             {
-                File file = new File("data/add" + index + ".data");
+                File file = new File("data/adds/add" + index + ".data");
                 if(file.exists())
                 {
                     FileReader fileReader = new FileReader(file);
