@@ -1,6 +1,5 @@
 package majkus522.mrpg;
 
-import majkus522.mrpg.abilities.AbilityController;
 import majkus522.mrpg.alchemy.AlchemyController;
 import majkus522.mrpg.blacksmith.BlacksmithController;
 import majkus522.mrpg.blacksmith.SchematicController;
@@ -21,6 +20,7 @@ import majkus522.mrpg.money.CommandPay;
 import majkus522.mrpg.playerClass.ClassController;
 import majkus522.mrpg.playerClass.CommandClass;
 import majkus522.mrpg.rank.CommandRank;
+import majkus522.mrpg.skills.SkillController;
 import majkus522.mrpg.warps.*;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -56,11 +56,11 @@ public final class Main extends JavaPlugin
         getServer().getPluginManager().registerEvents(new OnPlayerChat(), this);
         getServer().getPluginManager().registerEvents(new VillagerClick(), this);
         getServer().getPluginManager().registerEvents(new AlchemyController(), this);
-        getServer().getPluginManager().registerEvents(new AbilityController(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteract(), this);
         getServer().getPluginManager().registerEvents(new PlayerLevelUp(), this);
         getServer().getPluginManager().registerEvents(new BlacksmithController(), this);
         getServer().getPluginManager().registerEvents(new SchematicController(), this);
+        getServer().getPluginManager().registerEvents(new SkillController(), this);
 
         //Initialize items
         ItemManager.init();

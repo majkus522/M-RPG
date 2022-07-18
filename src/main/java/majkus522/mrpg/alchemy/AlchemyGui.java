@@ -1,7 +1,7 @@
 package majkus522.mrpg.alchemy;
 
 import majkus522.mrpg.Functions;
-import majkus522.mrpg.abilities.AbilityController;
+import majkus522.mrpg.skills.SkillController;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -17,7 +17,7 @@ public class AlchemyGui implements InventoryHolder
 
     public AlchemyGui(Player player)
     {
-        inventory = Bukkit.createInventory(this, AbilityController.abilityLearned(player, "Alchemia Zaawansowana") ? 54 : 45, "Alchemia");
+        inventory = Bukkit.createInventory(this, SkillController.haveSkill(player, "Zaawansowana alchemia") ? 54 : 45, "Alchemia");
         ItemStack empty = Functions.emptySlot();
         for(int index = 0; index < inventory.getSize(); index++)
             inventory.setItem(index, empty);
@@ -30,7 +30,7 @@ public class AlchemyGui implements InventoryHolder
 
         for(int index = 0; index < 7; index++)
             inventory.setItem(28 + index, ingridient);
-        if(AbilityController.abilityLearned(player, "Alchemia Zaawansowana"))
+        if(SkillController.haveSkill(player, "Zaawansowana alchemia"))
             for(int index = 0; index < 7; index++)
                 inventory.setItem(37 + index, ingridient);
     }

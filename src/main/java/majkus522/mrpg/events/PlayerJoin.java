@@ -1,8 +1,8 @@
 package majkus522.mrpg.events;
 
 import majkus522.mrpg.Functions;
+import majkus522.mrpg.Main;
 import majkus522.mrpg.ScoreboardController;
-import majkus522.mrpg.abilities.AbilityController;
 import majkus522.mrpg.clan.ClanController;
 import majkus522.mrpg.enderchest.EnderchestController;
 import majkus522.mrpg.level.LevelController;
@@ -12,6 +12,7 @@ import majkus522.mrpg.playerClass.ClassController;
 import majkus522.mrpg.playerClass.PlayerClass;
 import majkus522.mrpg.rank.Rank;
 import majkus522.mrpg.rank.RankController;
+import majkus522.mrpg.skills.SkillController;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -29,7 +30,6 @@ public class PlayerJoin implements Listener
     public void onPlayerJoin(PlayerJoinEvent event)
     {
         Player player = event.getPlayer();
-        ClanController.clanChatEnabled.put(player, false);
         if(player.hasPlayedBefore() && ClassController.getClass(player) != null && ClassController.getClass(player) != PlayerClass.Dummy)
         {
             Functions.setPlayerName(player);
@@ -48,8 +48,8 @@ public class PlayerJoin implements Listener
             MoneyController.setMoney(player, 0);
             ManaController.setPlayerMana(player, 10);
             ManaController.setPlayerMaxMana(player, 10);
-            AbilityController.setAbilities(player, "ffftfftff");
-            AbilityController.setPoints(player, 2);
+            SkillController.setSkillPoints(player, 2);
+            Main.config.set("Skills." + player.getUniqueId(), "");
 
             ItemStack item = new ItemStack(Material.WRITTEN_BOOK, 1);
             ItemMeta meta = item.getItemMeta();
@@ -58,6 +58,7 @@ public class PlayerJoin implements Listener
             item.setItemMeta(meta);
             player.getInventory().setItem(4, item);
         }
+        ClanController.clanChatEnabled.put(player, false);
         ScoreboardController.createScoreboard(player);
         event.setJoinMessage("");
     }

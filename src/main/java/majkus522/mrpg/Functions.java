@@ -9,8 +9,10 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.checkerframework.common.returnsreceiver.qual.This;
 
 import java.util.Map;
 import java.util.Objects;
@@ -99,5 +101,15 @@ public class Functions
             if (Objects.equals(value, entry.getValue()))
                 return entry.getKey();
         return null;
+    }
+
+    public static Inventory fillEmpty(@This Inventory input)
+    {
+        ItemStack empty = emptySlot();
+        for(int index = 0; index < input.getSize(); index++)
+        {
+            input.setItem(index, empty);
+        }
+        return input;
     }
 }

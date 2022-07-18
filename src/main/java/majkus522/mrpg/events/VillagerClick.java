@@ -1,8 +1,8 @@
 package majkus522.mrpg.events;
 
-import majkus522.mrpg.abilities.AbilityTree;
 import majkus522.mrpg.blacksmith.BlacksmithGui;
 import majkus522.mrpg.blacksmith.BlacksmithJob;
+import majkus522.mrpg.skills.SkillGui;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -22,7 +22,7 @@ public class VillagerClick implements Listener
             if(entity.getCustomName().equalsIgnoreCase(ChatColor.GOLD + "Mentor"))
             {
                 Player player = event.getPlayer();
-                player.openInventory(new AbilityTree(player).getInventory());
+                player.openInventory(new SkillGui(player, null).getInventory());
             }
             else if(entity.getCustomName().equalsIgnoreCase(ChatColor.GOLD + "Kowal"))
             {

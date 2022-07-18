@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948654c5-e2b2-41f4-bb52-569835f293b7" name="Changes" comment="Update 13:04 16.07.2022">
+    <list default="true" id="948654c5-e2b2-41f4-bb52-569835f293b7" name="Changes" comment="Update 21:24 17.07.2022">
+      <change afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/skills/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/skills/SkillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/skills/SkillGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/skills/SkillRarity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/blacksmith/BlacksmithController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/blacksmith/BlacksmithController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/blacksmith/BlacksmithGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/blacksmith/BlacksmithGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/CommandEnderchest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/CommandEnderchest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/EnderchestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/EnderchestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/EnderchestInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/enderchest/EnderchestGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Functions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/alchemy/AlchemyGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/alchemy/AlchemyGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/PlayerJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/PlayerJoin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/VillagerClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/events/VillagerClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/LevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/LevelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/CommandExpo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/CommandExpo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/ExpoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/ExpoGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/ExpoRightClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/warps/ExpoRightClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/PlayerLevelUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/level/PlayerLevelUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/playerClass/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/majkus522/mrpg/playerClass/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mrpg-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mrpg-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +28,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -55,10 +60,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23908046" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="majkus522.mrpg.skills" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="majkus522.mrpg" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="M-RPG build" type="MavenRunConfiguration" factoryName="Maven">
@@ -137,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657969498258</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update 21:24 17.07.2022">
+      <created>1658085875024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085875024</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 13:04 16.07.2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 13:04 16.07.2022" />
+    <MESSAGE value="Update 21:24 17.07.2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 21:24 17.07.2022" />
   </component>
 </project>

@@ -2,7 +2,6 @@ package majkus522.mrpg.playerClass;
 
 import majkus522.mrpg.Functions;
 import majkus522.mrpg.Main;
-import majkus522.mrpg.ScoreboardController;
 import majkus522.mrpg.events.custom.ItemRightClickEvent;
 import majkus522.mrpg.events.custom.PlatePressedEvent;
 import org.bukkit.Bukkit;
@@ -20,7 +19,6 @@ public class ClassController implements Listener
     {
         Main.config.set("Class." + player.getUniqueId(), playerClass.toString());
         Functions.setPlayerName(player);
-        ScoreboardController.createScoreboard(player);
     }
 
     public static PlayerClass getClass(Player player)
